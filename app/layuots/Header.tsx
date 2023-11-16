@@ -24,7 +24,7 @@ export default function Header() {
             return (
               <span
                 onClick={handleSelection}
-                className={`text-primary duration-300 hover:bg-gray-800 hover:font-bold rounded-lg p-3`}
+                className={`cursor-pointer text-primary duration-300 hover:bg-gray-800 hover:font-bold rounded-lg p-3`}
                 key={index}
               >
                 {projects.name}
