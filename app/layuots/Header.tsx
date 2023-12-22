@@ -17,14 +17,14 @@ export default function Header() {
   };
 
   return (
-    <section className=" border-primary border-t ">
-      <div className="flex py-4 px-8 items-center justify-center">
-        <div className="flex gap-x-5">
+    <section className="w-screen">
+      <div className="flex py-4 justify-center overflow-x-auto">
+        <div className="flex gap-x-7 justify-center">  
           {projects.map((projects, index) => {
             return (
               <span
                 onClick={handleSelection}
-                className={`cursor-pointer text-primary duration-300 hover:bg-gray-800 hover:font-bold rounded-lg p-3`}
+                className={`cursor-pointer text-primary p-3 duration-300 hover:bg-gray-800 hover:font-bold rounded-lg`}
                 key={index}
               >
                 {projects.name}
